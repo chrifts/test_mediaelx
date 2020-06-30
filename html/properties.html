@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/custom.css">
         <link rel="stylesheet" href="../css/sidebarnav.css">
         <link rel="stylesheet" href="../css/cards.css">
@@ -15,107 +16,119 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="../js/properties.js"></script>
     </head>
-    
     <body class="bk_zi">
-        <header class="container-fluid bk_zi">
-            <div class="row">
-                <div class="col-md-12">
+        <header class="container-fluid bk_zi mxw-main-container mb-3">
+            <div class="row ">
+                <div class="col-md-12 mt-3 mb-md-0">
                     <div class="row mb-4 d-none d-md-flex">
-                        <div class="col-md-12 d-flex justify-items-space-between justify-content-end my-auto" id="main-top-bar">
+                        <div class="col-md-12 d-flex justify-content-center justify-content-md-end my-auto" id="main-top-bar">
                             <span class="text-center my-auto">
-                                <i class="fas fa-cloud-sun"></i><span> Alicante</span>
+                                <img src="../Assests/clima.png" class="icon-weather mr-2"><span class="top_span_text">10° ALICANTE</span>
                             </span>
                             <span class="text-center my-auto">
-                                <i class="fas fa-mobile-alt"> </i><span> ENG +44 880 880 880</span>
+                                <img src="../Assests/mov.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12" >ENG</label><span class="top_span_text_grey"> +44 880 880 880</span>
                             </span>
                             <span class="text-center my-auto">
-                                <i class="fas fa-mobile-alt"> </i><span> ESP +34 660 660 660</span>
+                                <img src="../Assests/mov.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12">ESP</label><span class="top_span_text_grey"> +34 660 660 660</span>
                             </span>
                            
                             <span class="text-center my-auto">
-                                <i class="far fa-envelope"></i> <span> info@miinmobiliaria.com</span>
+                                <img src="../Assests/mail.svg" class="icon_mobile fix_mail_svg_header"> <span class="top_span_text"> info@miinmobiliaria.com</span>
                             </span>
                             <span class="text-center my-auto">
                                 <a href="">
-                                    <img src="../Assests/country_flags/uk.png" alt="England" class="width_flags">
+                                    <img src="../Assests/country_flags/eng_flag.svg" alt="England" class="width_flags">
                                 </a>
                             </span>
                             <span class="text-center my-auto">
                                 <a href="">
-                                    <img src="../Assests/country_flags/spain.png" alt="England" class="width_flags">
+                                    <img src="../Assests/country_flags/esp_flag.svg" alt="England" class="width_flags">
                                 </a>
                                 
                             </span>
                             <span class="text-center my-auto">
                                 <a href="">
-                                    <img src="../Assests/country_flags/netherlands.png" alt="England" class="width_flags">
+                                    <img src="../Assests/country_flags/neth_flag.svg" alt="England" class="width_flags">
                                 </a>
                                 
                             </span>
                             <buton class="btn_filled_dark white_text my-auto text-center custom_btn_search">
-                                SEARCH <i class="fas fa-search white_text"></i>
+                                SEARCH <img class="white_text icon_search_header" src="../Assests/search_header.svg" alt="">
                             </buton>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-7 col-md-4 d-flex justify-content-start my-auto">
-                            <h5 class="m-0">
-                                <a>MiInmobiliaria.com</a>
-                            </h5>
+                        <div class="col-6 col-md-3 d-flex justify-content-start my-auto">
+                            
+                                <a class="main_icon ml-2" href="#">
+                                    <img src="../Assests/logo.svg">
+                                </a>
+                            
                             
                         </div>
-                        <div id="nav_desktop" class="col-md-8 justify-content-end d-none d-md-flex">
-                            <nav>
-                                <span><a href="">HOME</a></span>
-                                <span><a href="">PROPERTIES</a></span>
-                                <span><a href="">ABOUT US</a></span>
-                                <span><a href="">CONTACT</a></span>
-                                <span><img src="../Assests/star.svg" alt="">(2)</span>
-                                <i class="fas fa-bars"></i><span>MENU</span>
-                            </nav>
+                        <div id="nav_desktop" class="col-md-9 justify-content-end d-none d-md-flex">
+                            <div class="col-md-8 d-flex justify-content-end">
+                                <span class="nav_button_header btn_active"><a href="">HOME</a></span>
+                                <span class="nav_button_header"><a href="">PROPERTIES</a></span>
+                                <span class="nav_button_header"><a href="">ABOUT US</a></span>
+                                <span class="nav_button_header"><a href="">CONTACT</a></span>
+                                <span class="ml-4 fav-icon"><img src="../Assests/fav.svg" alt=""></span><span class="mr-2 fav_q">(2)</span>
+                                <a href="#" class="hamb-menu-desktop">
+                                    <img src="../Assests/menu.svg">
+                                    <span>MENU</span>
+                                </a>
+                            </div>
                         </div>
-                        <div id="nav_mobile" class="col-5 my-auto col-md-8 justify-content-between d-sm-flex d-md-none">
-                            <div class="row">
-                                <div class="col-9">
-                                    <div class="dropdown">
-                                        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn p-0">
-                                            <img src="../Assests/country_flags/uk.png" class="width_flags">
-                                            <img src="../Assests/arrow_right.svg" alt="arrow_right" class="p-0 btn dropdown-toggle arrow_dropdown">
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dLabel">
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../Assests/country_flags/uk.png" alt="England" class="width_flags">
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../Assests/country_flags/spain.png" alt="Spain" class="width_flags">
-                                            </a>
-                                            <a class="dropdown-item" href="#">
-                                                <img src="../Assests/country_flags/netherlands.png" alt="Netherlands" class="width_flags">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 my-auto text-center">
-                                    <span onclick="openNav()" class="my-auto text-align-end"><i class="fas fa-bars"></i></span>                            
-                                    <div id="mySidenav" class="sidenav">
-                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                        <span><a href="">HOME</a></span>
-                                        <span><a href="">PROPERTIES</a></span>
-                                        <span><a href="">ABOUT US</a></span>
-                                        <span><a href="">CONTACT</a></span>
-                                        <span><img src="../Assests/star.svg" alt="">(2)</span>
-                                    </div>
+                        <div id="nav_mobile" class="col-6 my-auto justify-content-between d-sm-flex d-md-none">
+                            
+                            <div class="dropdown ml-3 d-inline">
+                                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn p-0">
+                                    <img src="../Assests/country_flags/eng_flag.svg" class="width_flags fix_height">
+                                    <img src="../Assests/arrow_down_grayd.svg" alt="arrow_right" class="p-0 btn dropdown-toggle arrow_dropdown fix_height">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+                                    <a class="dropdown-item" href="#">
+                                        <img src="../Assests/country_flags/eng_flag.svg" alt="England" class="width_flags"> English
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="../Assests/country_flags/esp_flag.svg" alt="Spain" class="width_flags"> Spanish
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="../Assests/country_flags/neth_flag.svg" alt="Netherlands" class="width_flags"> Dutch
+                                    </a>
                                 </div>
                             </div>
+                            <div class="text-start d-inline float-right mr-2 mt-1">
+                                <span onclick="openNav()" class="my-auto text-align-start"><img src="../Assests/menu.svg" class="p-1 border_hamb_mobile"></span>                            
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <span><a href="">HOME</a></span>
+                                    <span><a href="">PROPERTIES</a></span>
+                                    <span><a href="">ABOUT US</a></span>
+                                    <span><a href="">CONTACT</a></span>
+                                    <span><a href=""><img src="../Assests/fav.svg" alt="">(2)</span></a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
+            
         </header>
-        <main class="container bk_zi">
-            <section class="row mb-3" id="filters">
+        <section class="container bk_zi" id="filters">
+            <div class="row mb-3">
                 <div class="col-md-12">
-                    <h3 class="text-center font-weight-bold">170 properties find</h3>
+                    <div class="row">
+                        <div class="col-md-12 col-10">
+                            <h3 class="text-center font-weight-bold title_q_found">950 propiedades encontradas</h3>
+                        </div>
+                        <div class="col-2 d-block d-md-none my-auto text-center p-0">
+                            <button class="btn_outline_light_mobile_search">
+                                <img class="icon_search" src="../Assests/search_black.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
                     <div class="row d-none d-md-flex my-auto">
                         <div class="col-md-12 d-flex justify-content-space-between">
                             <div class="component_select mx-1">
@@ -158,16 +171,17 @@
 
                             <div class="component_select align-self-end">
                                 <button class="ml-3 btn_outline_light">
-                                    <i class="fas fa-search-plus"></i>
+                                    
+                                    <img class="icon_search" src="../Assests/advanced.svg" alt="">
                                 </button>
                                 <button class="ml-1 btn_filled_dark ">
-                                    <i class="fas fa-search white_text"></i>
+                                    <img class="icon_search" src="../Assests/search.svg" alt="">
                                 </button>
                             </div>                        
                         </div>
                     </div>
                     <div class="row mt-4 ">
-                        <div class="col-md-8 d-none d-md-flex">
+                        <div class="col-md-7 d-none d-md-flex">
                             <button class="btn_filled_dark small_btn">
                                 <i class="fas fa-border-all white_text"></i>
                             </button>
@@ -175,8 +189,8 @@
                                 <i class="fas fa-th-list" ></i>
                             </button>
                         </div>
-                        <div class="col-12 col-md-4 d-flex justify-content-end">
-                            <div class="component_select d-inline mr-md-4 mr-1">
+                        <div class="col-sm-12 col-md-5 d-flex justify-content-center justify-content-md-end">
+                            <div class="component_select d-inline mr-1 mr-md-1">
                                 <select class="custom_select_sort p-1 m-0" name="" id="">
                                     <option value="1"><label class="opt_of_select">12 properties</label> <img src="../Assests/arrow_right.svg" alt="arrow_right" class="p-0 btn dropdown-toggle arrow_dropdown"></option>
                                     <option value="2">OPT1</option>
@@ -193,11 +207,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <main class="container-fluid bk_zi">
-            <section class="row mb-3 mx-auto d-flex justify-content-center mxw-1920" id=grid_items>
-                <div class="card_style">
+            </div>
+        </section>
+        <main class="container-fluid bk_zi mxw-card-container">
+            <section class="row mb-3 mx-auto d-flex justify-content-center mxw-main-container" id=grid_items>
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -214,7 +228,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star_fill.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav_solid.svg" alt="" class="star_svg">
                         </div>
                         <a class="custom_carousel_button" href="#carouselControl" role="button" data-slide="prev">
                             <img src="../Assests/arrow_left.svg" alt="">
@@ -257,9 +271,9 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -276,7 +290,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
                         <a class="custom_carousel_button" href="#carouselControl" role="button" data-slide="prev">
                             <img src="../Assests/arrow_left_white.svg" alt="">
@@ -320,9 +334,9 @@
                         <span class="reduction_price">450.000€</span>
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -333,7 +347,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -372,9 +386,9 @@
                         <span class="from_price">From</span>
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -385,7 +399,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -424,9 +438,9 @@
                         <span class="from_price">From</span>
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -437,7 +451,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -475,9 +489,9 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
                 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -488,7 +502,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -526,9 +540,9 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -539,7 +553,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -577,9 +591,9 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -590,7 +604,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -628,9 +642,9 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -641,7 +655,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -679,9 +693,9 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -692,7 +706,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -730,9 +744,9 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -743,7 +757,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -781,9 +795,9 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="card_style">
+                <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
                     <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -794,7 +808,7 @@
                             <p class="ref_text font-weight-bold">REF: NL-1950</p>
                         </div>
                         <div class="carousel-control-next carousel_star">
-                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                            <img src="../Assests/fav.svg" alt="" class="star_svg">
                         </div>
 
                     </div>
@@ -832,20 +846,91 @@
                     <div class="card-foot">
                         <span class="price">299.000€</span>
                     </div>
+                </article>
+
+                <div id="paginator_and_last_viewed" class="col-lg-3 col-md-6 col-sm-12 my-2 d-flex justify-content-center" >
+                    
+                    <nav class="text-center">
+                        <ul class="pagination text-center">        
+                            <li class="page-item active mx-1">
+                                <a class="page-link active_page" href="#">1 <span class="sr-only">(current)</span></a>
+                                </li>
+                            <li class="page-item mx-1"><a class="page-link inactive_page" href="#">2</a></li>
+                            <li class="page-item mx-1"><a class="page-link inactive_page" href="#">3</a></li>
+                            <li class="page-item mx-1"><a class="page-link inactive_page" href="#">4</a></li>
+                        </ul>
+                        </nav>
+                    
                 </div>
+
+                
             </section>
-        </main>
-        <footer class="container-fluid">
             
+            
+        </main>
+        <footer class="container_footer mx-auto" > 
             <div class="background_footer mx-auto">
-                <div class="row">
-                    <div class="mt-5 col-md-12 d-flex justify-content-center">
-                        <span class="footer_title">MiInmobiliaria.com</span>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="mt-5 col-md-12 d-flex justify-content-center">
+                            <img src="../Assests/Logo_white.svg" class="footer_title">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="mt-5 col-12 col-md-6 d-flex flex-wrap justify-content-around">
+                            <span class="footer_nav btn_active_white"><a href="">HOME</a></span>
+                            <span class="footer_nav"><a href="">PROPERTIES</a></span>
+                            <span class="footer_nav"><a href="">SELL</a></span>
+                            <span class="footer_nav"><a href="">BUYING</a></span>
+                            <span class="footer_nav"><a href="">HOME ENHANCEMENTS</a></span>
+                            <span class="footer_nav"><a href="">URBAN MANAGEMENT</a></span>
+                            <span class="footer_nav"><a href="">CONTACT</a></span>
+                            <span class="footer_nav"><a href="">FAVOURITES</a></span>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row pb-5 pb-md-1">
+                        <div class="col-md-2 col-2"></div>
+                        <div class="col-md-1 col-1 border-bottom"></div>
+                        <div id="icons-in-footer" class="mt-5 col-6 col-md-6 d-flex flex-wrap justify-content-md-between justify-content-center border-bottom">
+                            <span class="text-center my-auto icon-footer">
+                                <img src="../Assests/phone_white_footer.svg" class="mb-4"><p class="text-icon-footer"> <span class="font-weight-bolder">ENG</span> +44 880 880 880 <span class="font-weight-bolder">ESP</span>  +34 660 660 660</p>
+                            </span>
+                            <span class="text-center my-auto icon-footer">
+                                <img src="../Assests/location_footer.svg" class="mb-4"><p class="text-icon-footer font-weight-bolder"> LOREM IPSUM · 65 ELCHE · ALICANTE</p>
+                            </span>
+                            <span class="text-center my-auto icon-footer">
+                                <img src="../Assests/mail_white_footer.svg" class="mb-4"><p class="font-weight-bolder h6"> info@miinmobiliaria </p>
+                            </span>
+                        </div>
+                        <div class="col-md-1 col-1 border-bottom"></div>
+                        <div class="col-md-2 col-2"></div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-2"></div>
+                        <div class="col-8 col-md-6 mb-5 mb-md-0">
+                            <p class="white_text font-weight-bolder footer_end_text">
+                                © 2020 <i class="fas fa-circle h8-circle"></i> 
+                                MiInmobiliaria <i class="fas fa-circle h8-circle"></i>
+                                Legal note <i class="fas fa-circle h8-circle"></i>
+                                Privacy <i class="fas fa-circle h8-circle"></i>
+                                Cookies <i class="fas fa-circle h8-circle"></i>
+                                Web map
+                                <span class="ml-3">Design: Mediaelx</span>
+                            </p>
+                        </div>
+                        <div class="mt-4 mt-md-0 col-12 col-md-2 d-flex justify-content-md-end justify-content-center footer_social_media">
+                            <img src="../Assests/twitter.svg" class="mx-3">
+                            <img src="../Assests/facebook.svg" class="mx-3">
+                            <img src="../Assests/instagram.svg" class="mx-3">
+                        </div>
+                        <div class="col-md-2 col-2"></div>
                     </div>
                 </div>
             </div>
         </footer>
-        
     </body>
     <script src="../js/carousel_control.js"></script>
 </html>

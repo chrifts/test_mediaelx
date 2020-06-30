@@ -1,0 +1,31 @@
+La prueba consiste en maquetar las tres secciones de las capturas usando Bootstrap 4 y jQuery.
+
+Los diseños están tanto en versión de escritorio como móvil y tienen que ser iguales a las capturas.
+
+Las captura son la siguientes:
+
+
+1 - HOME - DESKTOP.png
+
+1.1.1 - HOME – MENU - DESKTOP.png -> El menu desplegado en versión de escritorio
+
+1.1.2 - HOME - SEARCH - DESKTOP.png -> El buscador en versión de escritorio
+
+1.2 - HOME - PHONE.png
+
+1.2.1 - HOME - PHONE – MENU.png -> El menu desplegado en versión móvil
+
+2 - PROPERTIES - GRID.png
+
+2 - PROPERTIES - PHONE.png
+
+3 - PROPERTY - PHONE.png
+
+3 - PROPERTY.png
+
+
+Fuentes del documento:
+
+Destacados y titulares: https://fonts.google.com/specimen/Poppins
+
+Párrafo: https://fonts.google.com/specimen/Open+Sans?query=open+sans

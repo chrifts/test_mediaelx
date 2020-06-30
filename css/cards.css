@@ -58,17 +58,19 @@
 }
 
 .carousel_ref {
-    bottom: 150px;
-    left: -4px;
+    top: 0;
+    left: 0;
     opacity: 1;
+    height: 28%;
     width: 50%;
     z-index: 0 !important;
 }
 
 .carousel_star {
-    bottom: 169px;
+    top: 0;
     opacity: 1;
     width: 50%;
+    height: 21%;
     z-index: 0 !important;
 }
 
@@ -88,7 +90,7 @@
         width: 27px;
         position: relative;
         padding: 3px;
-        top: 8px;
+        top: 0px;
         left: 49px;
         background-color: white;
     }
@@ -108,8 +110,15 @@
     font-weight: 600;
 }
 
+
+@media (min-width: 769px) {
+    .mxw_card {
+        max-width: 20rem;
+    }
+}
+
 .custom_carousel_button {
-    height: 130px;
+    height: 58%;
     position: absolute;
     bottom: 36px;
     z-index: 0;
@@ -127,4 +136,17 @@
 
 .right_pos {
     right: 0 !important;
+}
+
+.active_page {
+    background-color: rgb(75, 74, 66) !important;
+    border-color: black !important;
+    border-radius: 0 !important;
+}
+
+.inactive_page {
+    color: black;
+    background-color: rgb(241, 238, 221) !important;
+    border-color: rgb(241, 238, 221) !important;
+    border-radius: 0 !important;
 }

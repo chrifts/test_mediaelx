@@ -1,18 +1,87 @@
-.background_footer {
-    font-family: 'Muli', sans-serif;
-    background:url("../Assests/image_slider_3.jpg");
-    background-position: center center; 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    max-width: 1920px;
-    height: 500px;
-    
-        
+.footer_title {
+    margin-top: 105px;
+    max-width: 299px;
 }
 
-.footer_title {
-    font-size: 32px;
+.container_footer {
+    max-width: 1920px;
+    padding: 0 !important;
+}
+.background_footer {
+    font-family: 'Muli', sans-serif;
+    background: url("../Assests/footer.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 539px;
+}
+
+.background_footer:before {
+    height: inherit;
+    content: '\A';
+    position: absolute;
+    background-color: black;
+    opacity: 0.2;
+    width: 100%;
+    max-width: 1920px;
+}
+
+@media (max-width: 768px) { 
+    .background_footer {
+        font-family: 'Muli', sans-serif;
+        background: url("../Assests/mobile_footer.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 969px;
+    }
+    .footer_title {
+        margin-top: 66px;
+    }
+}
+
+#icons-in-footer span:last-child {
+    height: 120px;
+}
+
+.footer_nav a {
+    color: grey;
     font-weight: 800;
+}
+
+@media (max-width: 1240px) { 
+    .footer_end_text {
+        font-size: 12px;
+        margin: 0 !important;
+    }
+}
+
+.footer_social_media {
+    margin: 0 !important;
+}
+
+
+.icon-footer {
+    font-size: 28px;
     color: white;
+    width: 150px;
+    height: 150px;
+}
+
+.icon-footer i {
+    font-size: 32px;
+}
+
+.text-icon-footer {
+    font-size: 14px;
+}
+
+.btn_active_white a {
+    color: white;
+}
+
+.h8-circle {
+    font-size: 0.5rem;
+    position: relative;
+    bottom: 2px;
 }
