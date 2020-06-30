@@ -91,13 +91,15 @@ var data = [
     }
   ]
 
-  console.log(data);
-  /* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
-  
-  /* Set the width of the side navigation to 0 */
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "250px";
 }
+  
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+// window.addEventListener("scroll", function (event) {
+//   var scroll = this.scrollY;
+//   console.log(scroll)
+// });

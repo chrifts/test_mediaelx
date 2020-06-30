@@ -4,10 +4,17 @@ body {
 #grid_items {
     font-family: 'Muli', sans-serif;
 }
+
+.bk_zi {
+    z-index: 2; 
+    background-color: white;
+}
+
 .width_flags {
     width: 30px;
     height: 20px;
     margin: 0px 2px 0px 2px;
+    border-radius: 2px;
 }
 
 .arrow_dropdown {
@@ -33,6 +40,7 @@ body {
     background-color: black;
     width: 75px;
     height: 40px;
+    line-height: 27px;
 }
 
 .small_btn {
@@ -44,14 +52,12 @@ body {
     color: white;
 }
 
-/* .offset_small {
-    position: relative;
-    right: 6px;
-} */
+.mxw-1920 {
+    max-width: 1920px;
+}
 
-.mxw-1200 {
-    max-width: 1200px;
-    
+.h7 {
+    font-size: 0.7rem;
 }
 
 #main-top-bar span {
@@ -79,7 +85,6 @@ body {
 
 .custom_select_sort {
     border: none;
-    
     padding-top: 10px !important;
     width: 80%;
     -webkit-appearance: none;
@@ -90,7 +95,6 @@ body {
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: 16px;
-    
     border-radius: 2px;
     margin-right: 2rem;
     padding: 1rem;

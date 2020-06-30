@@ -1,0 +1,18 @@
+.background_footer {
+    font-family: 'Muli', sans-serif;
+    background:url("../Assests/image_slider_3.jpg");
+    background-position: center center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    max-width: 1920px;
+    height: 500px;
+    
+        
+}
+
+.footer_title {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+}

@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
         <link rel="stylesheet" href="../css/custom.css">
         <link rel="stylesheet" href="../css/sidebarnav.css">
+        <link rel="stylesheet" href="../css/cards.css">
+        <link rel="stylesheet" href="../css/footer.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -14,8 +16,8 @@
         <script src="../js/properties.js"></script>
     </head>
     
-    <body>
-        <header class="container-fluid">
+    <body class="bk_zi">
+        <header class="container-fluid bk_zi">
             <div class="row">
                 <div class="col-md-12">
                     <div class="row mb-4 d-none d-md-flex">
@@ -110,7 +112,7 @@
                 </div>
             </div>
         </header>
-        <main class="container">
+        <main class="container bk_zi">
             <section class="row mb-3" id="filters">
                 <div class="col-md-12">
                     <h3 class="text-center font-weight-bold">170 properties find</h3>
@@ -193,36 +195,657 @@
                 </div>
             </section>
         </main>
-        <main class="container-fluid">
-            <section class="row mb-3 mx-auto d-flex justify-content-between mxw-1200" id=grid_items>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../Assests/image_slider_1.jpg" alt="Card image cap">
+        <main class="container-fluid bk_zi">
+            <section class="row mb-3 mx-auto d-flex justify-content-center mxw-1920" id=grid_items>
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block w-100" src="../Assests/image_slider_2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block w-100" src="../Assests/image_slider_3.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star_fill.svg" alt="" class="star_svg">
+                        </div>
+                        <a class="custom_carousel_button" href="#carouselControl" role="button" data-slide="prev">
+                            <img src="../Assests/arrow_left.svg" alt="">
+                        </a>
+                        <a class="custom_carousel_button right_pos" href="#carouselControl" role="button" data-slide="next">
+                            <img src="../Assests/arrow_right.svg" alt="">
+                        </a>
+                    </div>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../Assests/image_slider_1.jpg" alt="Card image cap">
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block w-100" src="../Assests/image_slider_2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block w-100" src="../Assests/image_slider_3.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+                        <a class="custom_carousel_button" href="#carouselControl" role="button" data-slide="prev">
+                            <img src="../Assests/arrow_left_white.svg" alt="">
+                        </a>
+                        <a class="custom_carousel_button right_pos" href="#carouselControl" role="button" data-slide="next">
+                            <img src="../Assests/arrow_right_white.svg" alt="">
+                        </a>
+                    </div>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="reduction_price">450.000€</span>
+                        <span class="price">299.000€</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../Assests/image_slider_1.jpg" alt="Card image cap">
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="from_price">From</span>
+                        <span class="price">299.000€</span>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="../Assests/image_slider_1.jpg" alt="Card image cap">
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="from_price">From</span>
+                        <span class="price">299.000€</span>
+                    </div>
+                </div>
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
+                    </div>
+                </div>
+                
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
+                    </div>
+                </div>
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
+                    </div>
+                </div>
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
+                    </div>
+                </div>
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg ">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
+                    </div>
+                </div>
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
+                    </div>
+                </div>
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
+                    </div>
+                </div>
+
+                <div class="card_style">
+                    <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                            </div>
+                        </div>
+                        <div class="carousel-control-prev carousel_ref">
+                            <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                        </div>
+                        <div class="carousel-control-next carousel_star">
+                            <img src="../Assests/star.svg" alt="" class="star_svg">
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                        <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="icons-card">
+                                <i class="fas fa-home"></i>
+                                <p class="h7"> 120m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <p class="h7"> 1000m2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bath"></i>
+                                <p class="h7"> 2</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-bed"></i>
+                                <p class="h7"> 3</p>
+                            </div>
+                            <div class="icons-card">
+                                <i class="fas fa-swimming-pool"></i>
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/toilet.svg">
+                            </div>
+                            <div class="icons-card d-none d-md-block">
+                                <img src="../Assests/garaje.svg">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="card-foot">
+                        <span class="price">299.000€</span>
                     </div>
                 </div>
             </section>
         </main>
-        
-        
+        <footer class="container-fluid">
+            
+            <div class="background_footer mx-auto">
+                <div class="row">
+                    <div class="mt-5 col-md-12 d-flex justify-content-center">
+                        <span class="footer_title">MiInmobiliaria.com</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
         
     </body>
+    <script src="../js/carousel_control.js"></script>
 </html>

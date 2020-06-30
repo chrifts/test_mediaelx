@@ -1,0 +1,130 @@
+.card_style {
+    margin: 10px 10px 10px 10px;
+    width: 19rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+.card-body {
+    border: 2px solid rgba(0,0,0,.125);
+    border-top: none;
+}
+
+.card-foot {
+    border: 2px solid rgba(0,0,0,.125);
+    border-top: none;
+    padding: 10px;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.reduction_price {
+    color: rgb(141, 141, 141);
+    text-decoration: line-through;
+}
+
+.from_price {
+    font-weight: bold;
+}
+
+.crd-location {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.crd-title {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.icons-card {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 10px !important;
+}
+
+.carousel_ref {
+    bottom: 150px;
+    left: -4px;
+    opacity: 1;
+    width: 50%;
+    z-index: 0 !important;
+}
+
+.carousel_star {
+    bottom: 169px;
+    opacity: 1;
+    width: 50%;
+    z-index: 0 !important;
+}
+
+.star_svg {
+    height: 27px;
+    width: 27px;
+    position: relative;
+    padding: 3px;
+    top: 3px;
+    left: 51px;
+    background-color: white;
+}
+
+@media (max-width: 334px) {
+    .star_svg {
+        height: 27px;
+        width: 27px;
+        position: relative;
+        padding: 3px;
+        top: 8px;
+        left: 49px;
+        background-color: white;
+    }
+    .carousel_ref {
+        bottom: 135px;
+        left: -4px;
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+.ref_text {
+    width: 85%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.custom_carousel_button {
+    height: 130px;
+    position: absolute;
+    bottom: 36px;
+    z-index: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    transition: opacity .15s
+}
+
+.right_pos {
+    right: 0 !important;
+}
