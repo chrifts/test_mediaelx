@@ -15,12 +15,14 @@
 .card-body {
     border: 2px solid rgba(0,0,0,.125);
     border-top: none;
+    background-color: white;
 }
 
 .card-foot {
     border: 2px solid rgba(0,0,0,.125);
     border-top: none;
     padding: 10px;
+    background-color: white;
 }
 
 .price {

@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="../css/cards.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/property.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -18,23 +22,23 @@
         <script src="../js/properties.js"></script>
     </head>
     <body class="bk_zi">
-        <header class="container-fluid bk_zi mxw-main-container mb-3">
-            <div class="row ">
-                <div class="col-md-12 mt-3 mb-md-0">
-                    <div class="row mb-4 d-none d-md-flex">
-                        <div class="col-md-12 d-flex justify-content-center justify-content-md-end my-auto" id="main-top-bar">
+        <header class="container-fluid bk_zi mxw-main-container">
+            <div class="row">
+                <div class="col-md-12 mb-md-0 px-0 px-md-3 mx-0">
+                    <div class="row mx-2 d-none d-md-flex">
+                        <div class="col-md-12 d-flex justify-content-center justify-content-md-end my-auto" id="main-top-bar" style="padding-right: 0;">
                             <span class="text-center my-auto">
-                                <img src="../Assests/clima.png" class="icon-weather mr-2"><span class="top_span_text">10° ALICANTE</span>
+                                <img src="../Assests/clime.svg" class="icon-weather mr-2"><span class="top_span_text white_text">10° ALICANTE</span>
                             </span>
-                            <span class="text-center my-auto">
-                                <img src="../Assests/mov.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12" >ENG</label><span class="top_span_text_grey"> +44 880 880 880</span>
+                            <span class="text-center my-auto white_text">
+                                <img src="../Assests/mov_white.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12 white_text" >ENG</label><span class="top_span_text_grey white_text"> +44 880 880 880</span>
                             </span>
-                            <span class="text-center my-auto">
-                                <img src="../Assests/mov.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12">ESP</label><span class="top_span_text_grey"> +34 660 660 660</span>
+                            <span class="text-center my-auto white_text">
+                                <img src="../Assests/mov_white.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12 white_text">ESP</label><span class="top_span_text_grey white_text"> +34 660 660 660</span>
                             </span>
                            
-                            <span class="text-center my-auto">
-                                <img src="../Assests/mail.svg" class="icon_mobile fix_mail_svg_header"> <span class="top_span_text"> info@miinmobiliaria.com</span>
+                            <span class="text-center my-auto white_text">
+                                <img src="../Assests/mail_white.svg" class="icon_mobile fix_mail_svg_header"> <span class="top_span_text white_text"> info@miinmobiliaria.com</span>
                             </span>
                             <span class="text-center my-auto">
                                 <a href="">
@@ -58,14 +62,11 @@
                             </buton>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mx-md-2 py-4 background_header mx-0">
                         <div class="col-6 col-md-3 d-flex justify-content-start my-auto">
-                            
-                                <a class="main_icon ml-2" href="#">
-                                    <img src="../Assests/logo.svg">
-                                </a>
-                            
-                            
+                            <a class="main_icon ml-2" href="#">
+                                <img src="../Assests/logo.svg">
+                            </a>
                         </div>
                         <div id="nav_desktop" class="col-md-9 justify-content-end d-none d-md-flex">
                             <div class="col-md-8 d-flex justify-content-end">
@@ -115,56 +116,647 @@
                     </div>
                 </div>
             </div>
-            
         </header>
-        <section class="container" id="prop_header">
-            <div class="row mt-5">
+        <section id="prop_header" class="container">
+            <article class="row mt-5 d-none d-md-flex">
                 <div class="col-md-7">
                     <div>
                         <p class="h5">Villa <span class="font-weight-bolder">NEW BUILD</span></p>
                         
                         <div class="mt-2">
-                            <div class="my-auto d-inline">
+                            <div class="my-auto d-inline mr-2">
                                 <span class="ref_text font-weight-bold pt-1 py-1 px-3">REF: C-1897</span>
                             </div>
-                            <div class="icons-card-prop my-auto d-inline">
+                            <div class="icons-card-prop my-auto d-inline mr-2">
                                 <i class="fas fa-home"></i>
                                 <span class="h7"> 120m2</span>
                             </div>
-                            <div class="icons-card-prop my-auto d-inline">
+                            <div class="icons-card-prop my-auto d-inline mr-2">
                                 <i class="fas fa-expand-arrows-alt"></i>
                                 <span class="h7"> 1000m2</span>
                             </div>
-                            <div class="icons-card-prop my-auto d-inline">
+                            <div class="icons-card-prop my-auto d-inline mr-2">
                                 <i class="fas fa-bath"></i>
                                 <span class="h7"> 2</span>
                             </div>
-                            <div class="icons-card-prop my-auto d-inline">
+                            <div class="icons-card-prop my-auto d-inline mr-2">
                                 <i class="fas fa-bed"></i>
                                 <span class="h7"> 3</span>
                             </div>
-                            <div class="icons-card-prop my-auto d-inline">
+                            <div class="icons-card-prop my-auto d-inline mr-2">
                                 <i class="fas fa-swimming-pool"></i>
                             </div>
-                            <div class="icons-card d-none d-md-inline">
-                                <img src="../Assests/toilet.svg" style="position: relative; top: 8px;">
+                            <div class="icons-card d-none d-md-inline mr-2">
+                                <img src="../Assests/toilet.svg" style="position: relative; bottom: 3px;" >
                             </div>
-                            <div class="icons-card d-none d-md-inline ">
-                                <img src="../Assests/garaje.svg" style="position: relative; top: 8px;">
+                            <div class="icons-card d-none d-md-inline">
+                                <img src="../Assests/garaje.svg" style="position: relative; bottom: 3px;">
                             </div>
                         </div>
-                        
-                        
-                        
                     </div>
                 </div>
                 <div class="col-md-5">
                     <p class="text-right font-weight-bolder h4">299.000€</p>
-                    <p class="text-right">NOTIFY ME OF PRICE DROP</p>
+                    <button class="w-notify btn_outline_light_no_widht float-right"><span class="txt_btn_outlined">NOTIFY ME OF PRICE DROP</span></button>
+                </div>
+            </article>
+        </section>
+        <section id="main_image_carousel" class="mt-0 mt-md-3 custom_background_right mx-auto d-flex justify-content-center mxw-main-container">
+            <div class="container container_carousel">
+                
+                <div id="carouselExampleControls" class="carousel slide" style="opacity: 1 !important;" data-ride="carousel" >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="../Assests/image_slider_2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="../Assests/image_slider_3.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <img src="../Assests/arrow_left.svg" alt="">
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <img src="../Assests/arrow_right.svg" alt="">
+                    </a>
+                </div>
+                    
+                    
+                
+            </div>
+        </section>
+        <section id="thumbnail_carousel" class="container container_carousel">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_1.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_2.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_3.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_1.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_2.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_3.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_1.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_2.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    <li class="m-1 m-md-2">
+                        <img src="../Assests/image_slider_3.jpg" alt="">
+                        <div class="uk-position-center uk-panel"></div>
+                    </li>
+                    
+                </ul>
+            
+                <a class="d-none d-md-block uk-position-center-left uk-position-small uk-hidden-hover" href="#"  uk-slider-item="previous">
+                    <img src="../Assests/arrow_left.svg" alt="">
+                </a>
+                <a class="d-none d-md-block uk-position-center-right uk-position-small uk-hidden-hover" href="#"  uk-slider-item="next">
+                    <img src="../Assests/arrow_right.svg" alt="">
+                </a>
+            
+            </div>
+        </section>
+        <section id="prop_info" class="container">
+            <div class="row d-md-none">
+                <div class="col-12 text-center">
+                    <p class="crd-title mb-0 mt-3">Apartament <span style="font-weight: 900;">FOR SALE</span></p>
+                    <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                </div>
+                <div class="col-12 d-flex justify-content-center flex-wrap mt-2">
+                    <p class="ref_text w-75 font-weight-bold text-center px-3 py-1">REF: C-1879</p>
+                    <p class="price text-center w-100">299.000€</p>
+                    <button class="w-notify btn_outline_light_no_widht float-right py-1"><span class="txt_btn_outlined">NOTIFY ME OF PRICE DROP</span></button>
+                </div>
+                
+            </div>
+            <div class="row d-none d-md-flex">
+                <div class="col-md-12 d-flex flex-wrap">
+                    <button class="p-0 btn_outline_dark_info"><span class="txt_btn_outlined">CHARACTERISTICS</span></button>
+                    <button class="p-0 btn_outline_light_info"><span class="txt_btn_outlined">DESCRIPTION</span></button>
+                    <button class="p-0 btn_outline_light_info"><span class="txt_btn_outlined">LOCATION</span></button>
+                    <button class="p-0 btn_outline_light_info last_border"><span class="txt_btn_outlined">ECONOMY</span></button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-8 border_mobile">
+                    <h3 class="font-weight-bolder mb-5 d-none d-md-block">CHARACTERISTICS</h3>
+                    <div class="row">
+                        <div class="col-12 d-flex d-md-none justify-content-center flex-wrap">
+                            <p class="ref_text w-100 font-weight-bold text-center px-3 py-1">CHARACTERISTICS</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <ul class="ul_char mb-0 ml-3 ml-md-0">
+                                <li>
+                                    <span class="font-weight-bolder"> <img class="mr-2" src="../Assests/check.svg" alt=""> Bedrooms: </span>2
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> <img class="mr-2" src="../Assests/check.svg" alt=""> Bathrooms: </span>2
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> <img class="mr-2" src="../Assests/check.svg" alt=""> Built: </span>94m2
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> <img class="mr-2" src="../Assests/check.svg" alt=""> Energy Rating: </span>In process
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> <img class="mr-2" src="../Assests/check.svg" alt=""> Year of construction: </span>2020
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> <img class="mr-2" src="../Assests/check.svg" alt=""> Orientation: </span>South
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> <img class="mr-2" src="../Assests/check.svg" alt=""> Balcony: </span>11m2
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> <img class="mr-2" src="../Assests/check.svg" alt=""> Distance to beach: </span>400Mts.
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Heating
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <ul class="ul_char pl-md-3 ml-3 ml-md-0">
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Air conditioning
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Sea views
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Reinforced door
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Video door entry system
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Coast
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Shopping Centers
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Centre
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Terrace
+                                </li>
+                                <li>
+                                    <img class="mr-2" src="../Assests/check.svg" alt=""> Lift
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-7 col-md-6">
+                                    <img src="../Assests/Process.jpg" alt="" class="mr-md-5 ml-2 ml-md-0">
+                                </div>
+                                <div class="col-5 col-md-6 text-md-left my-auto pl-0 pl-md-3">
+                                    <p class="m-0 h6-5">ENERGY RATING</p>
+                                    <p class="m-0 font-weight-bolder h5">IN PROCESS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-md-none">
+                        <div class="col-12">
+                            <button class="p-0 btn_info_group w-100 info_mobile_btn"><span class="txt_btn_outlined"> DESCRIPTION </span></button>
+                        </div>
+                    </div>
+                    <div class="row d-md-none">
+                        <div class="col-12">
+                            <button class="p-0 btn_info_group info_mobile_btn w-100"><span class="txt_btn_outlined"> LOCATION</span></button>
+                        </div>
+                    </div>
+                    <div class="row d-md-none">
+                        <div class="col-12">
+                            <button class="p-0 btn_info_group w-100 info_mobile_btn"><span class="txt_btn_outlined"> ECONOMY</span></button>
+                        </div>
+                    </div>
+                    <div class="row my-5 d-none d-md-flex">
+                        <div class="col-md-12">
+                            <h3 class="font-weight-bolder">DESCRIPTION</h3>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti impedit asperiores, voluptatum quaerat officia excepturi sequi quisquam nesciunt enim maiores sunt doloribus incidunt nihil nisi iste unde. Ad, minus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, aperiam quo fugiat libero commodi aliquid laudantium fugit culpa amet temporibus eligendi unde nesciunt ea nostrum earum odit dolor, facilis inventore?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti impedit asperiores, voluptatum quaerat officia excepturi sequi quisquam nesciunt enim maiores sunt doloribus incidunt nihil nisi iste unde. Ad, minus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti impedit asperiores, voluptatum quaerat officia excepturi sequi quisquam nesciunt enim maiores sunt doloribus incidunt nihil nisi iste unde. Ad, minus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti impedit asperiores, voluptatum quaerat officia excepturi sequi quisquam nesciunt enim maiores sunt doloribus incidunt nihil nisi iste unde. Ad, minus.</p>
+                        </div>
+                    </div>
+                    <div class="row my-5 d-none d-md-flex">
+                        <div class="col-md-12">
+                            <h3 class="font-weight-bolder">LOCATION</h3>
+                            <img class="mt-3" src="../Assests/map.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row my-5 d-none d-md-flex">
+                        <div class="col-md-12">
+                            <h3 class="font-weight-bolder">ECONOMY</h3>
+                            <p>This info given here is subject to errors and do not form part of any contract. The offer can be changed or withdrawn without notice. Prices do not include purchase costs</p>
+                        </div>
+                    </div>
+                    <div class="row my-3 d-none d-md-flex">
+                        <div class="col-md-6">
+                            <h4 class="font-weight-bolder">CALCULATE MORTAGES</h4>
+                            <div class="component_select">
+                                <label for="" class="label_for_select px-1">QUANTITY</label>
+                                <input type="text" class="custom_select_text p-1" name="name" value=" 115000">
+                            </div>
+                            <div class="component_select">
+                                <label for="" class="label_for_select px-1">INTEREST</label>
+                                <input type="text" class="custom_select_text p-1" name="name" value=" 3.5">
+                            </div>
+                            <div class="component_select">
+                                <label for="" class="label_for_select px-1">YEARS</label>
+                                <input type="text" class="custom_select_text p-1" name="name" value=" 20 years">
+                            </div>
+
+                            <button class="p-0 btn_outline_dark_info w-100 mt-3"><img src="../Assests/calculate.svg" alt=""><span class="txt_btn_outlined ml-3">CALCULATE</span></button>
+
+                            <div class="component_select">
+                                <label for="" class="label_for_select px-1">Your monthly payments will be</label>
+                                <input type="text" class="custom_select_text p-1" name="name" value=" 400€" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">   
+                            <h4 class="font-weight-bolder">CALCULATE MORTAGES</h4>
+                            <ul class="ul_char pt-4">
+                                <li>
+                                    <span class="font-weight-bolder"> Pounds: </span>958.813 GBP
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> Russian ruble: </span>79.374.035 RUB
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> Swiss franc: </span>1.222.795 CHF
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> Chinese yuan: </span>8.727.350 CNY
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> Dollar: </span>1.249.705 USD
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> Swedish krona: </span>12.054.645 SEK
+                                </li>
+                                <li>
+                                    <span class="font-weight-bolder"> The Norwegian crown: </span>11.547.725 NOK
+                                </li>
+                            </ul>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0">
+                    <button class="p-0 btn_info_group border w-100 border-dark mb-3"><span class="txt_btn_outlined"> <img class="mr-2" src="../Assests/send.svg" alt=""> SEND TO A FRIEND</span></button>
+                    <button class="p-0 btn_info_group border w-100 border-dark mb-3"><span class="txt_btn_outlined"> <img class="mr-2" src="../Assests/star.svg" alt=""> ADD TO FAVOURITES</span></button>
+                    <button class="p-0 btn_info_group border w-100 border-dark mb-2"><span class="txt_btn_outlined fix_x_pos"> <img class="mr-2" src="../Assests/print.svg" alt=""> PRINT / PDF</span></button>
+                    <h3 class="font-weight-bolder">ASK FOR INFORMATION</h3>
+                    <form action="">
+                        <div class="component_select mx-1">
+                            <label for="" class="label_for_select px-1">NAME</label>
+                            <input type="text" class="custom_select_text p-1" name="name" value=" Name">
+                        </div>
+                        <div class="component_select mx-1">
+                            <label for="" class="label_for_select px-1">EMAIL</label>
+                            <input type="email" class="custom_select_text p-1" name="email" value=" Email">
+                        </div>
+                        <div class="component_select mx-1">
+                            <label for="" class="label_for_select px-1">PHONE</label>
+                            <input type="text" class="custom_select_text p-1" name="phone" value=" Phone">
+                        </div>
+                        <div class="component_select mx-1">
+                            <label for="" class="label_for_select px-1">QUESTION</label>
+                            <textarea type="text" class="custom_select_text p-1" name="question" style="min-height: 145px;"> Write your question </textarea>
+                        </div>
+                        <div class="example">
+                            <label class="checkbox-button">
+                              <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="agree_privacy">
+                              <span class="checkbox-button__control"></span>
+                              <span class="checkbox-button__label"><span style="font-size: 11px;">Mark the box to contact us and agree that your information will be used according to our Privacy Policy you will be automatically be added to our mailing list, but you can revoke at any time</span></span>
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-center flex-wrap my-3">
+                            <img src="../Assests/captcha.svg" alt="">
+                            <button class="btn_outline_dark_info w-100 mt-3 mx-auto" style="height: 40px;">
+                                <span class="txt_btn_outlined text-center white_text">SEND</span>
+                            </button>
+                        </div>
+                        
+                        <span style="font-size: 12px;"><span class="font-weight-bolder">Responsable del tratamiento:</span> 
+                        Miinmobiliaria, <span class="font-weight-bolder">Finalidad del tratamiento:</span> 
+                        Gestión y control de los servicios ofrecidos a través de la página Web de Servicios Inmobiliarios, Envío de información a través de newsletter y otros, Legitimación: Por consentimiento</span>
+                    </form>
                 </div>
             </div>
         </section>
-
+        <section id="similar_props" class="similar_props">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 pt-1 pt-md-5">
+                        <div class="d-flex justify-content-center my-5">
+                            <div class="d-inline-block text-center">
+                                <p class="m-0 h6-5 mb-2 d-none d-md-block">LOREM IPSUM</p>
+                                <p class="m-0 font-weight-bolder h3">SIMILAR PROPERTIES</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">                    
+                    <div class="col-12 col-md-12">
+                        <section class="row mb-3 mx-auto d-flex justify-content-center mxw-main-container" id=grid_items>
+                            <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card">
+                                <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-prev carousel_ref">
+                                        <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                                    </div>
+                                    <div class="carousel-control-next carousel_star">
+                                        <img src="../Assests/fav.svg" alt="" class="star_svg">
+                                    </div>
+            
+                                </div>
+                                <div class="card-body">
+                                    <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                                    <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="icons-card">
+                                            <i class="fas fa-home"></i>
+                                            <p class="h7 m-0"> 120m2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <p class="h7 m-0"> 1000m2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-bath"></i>
+                                            <p class="h7 m-0"> 2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-bed"></i>
+                                            <p class="h7 m-0"> 3</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-swimming-pool"></i>
+                                        </div>
+                                        
+                                    </div>                        
+                                </div>
+                                <div class="card-foot">
+                                    <span class="from_price">From</span>
+                                    <span class="price">299.000€</span>
+                                </div>
+                            </article>
+                            <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card d-none d-md-block">
+                                <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-prev carousel_ref">
+                                        <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                                    </div>
+                                    <div class="carousel-control-next carousel_star">
+                                        <img src="../Assests/fav.svg" alt="" class="star_svg">
+                                    </div>
+            
+                                </div>
+                                <div class="card-body">
+                                    <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                                    <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="icons-card">
+                                            <i class="fas fa-home"></i>
+                                            <p class="h7 m-0"> 120m2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <p class="h7 m-0"> 1000m2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-bath"></i>
+                                            <p class="h7 m-0"> 2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-bed"></i>
+                                            <p class="h7 m-0"> 3</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-swimming-pool"></i>
+                                        </div>
+                                        
+                                    </div>                        
+                                </div>
+                                <div class="card-foot">
+                                    <span class="from_price">From</span>
+                                    <span class="price">299.000€</span>
+                                </div>
+                            </article>
+                            <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card d-none d-md-block">
+                                <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-prev carousel_ref">
+                                        <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                                    </div>
+                                    <div class="carousel-control-next carousel_star">
+                                        <img src="../Assests/fav.svg" alt="" class="star_svg">
+                                    </div>
+            
+                                </div>
+                                <div class="card-body">
+                                    <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                                    <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="icons-card">
+                                            <i class="fas fa-home"></i>
+                                            <p class="h7 m-0"> 120m2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <p class="h7 m-0"> 1000m2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-bath"></i>
+                                            <p class="h7 m-0"> 2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-bed"></i>
+                                            <p class="h7 m-0"> 3</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-swimming-pool"></i>
+                                        </div>
+                                        
+                                    </div>                        
+                                </div>
+                                <div class="card-foot">
+                                    <span class="from_price">From</span>
+                                    <span class="price">299.000€</span>
+                                </div>
+                            </article>
+                            <article class="col-lg-3 col-md-6 col-sm-12 my-2 mxw_card d-none d-md-block">
+                                <div id="carouselControl" class="carousel slide carousel_selector" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="../Assests/image_slider_1.jpg" alt="First slide">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-control-prev carousel_ref">
+                                        <p class="ref_text font-weight-bold">REF: NL-1950</p>
+                                    </div>
+                                    <div class="carousel-control-next carousel_star">
+                                        <img src="../Assests/fav.svg" alt="" class="star_svg">
+                                    </div>
+            
+                                </div>
+                                <div class="card-body">
+                                    <span class="crd-location">ALICANTE - COSTA BLANCA SOUTH</span>
+                                    <span class="crd-title">Apartament <span style="font-weight: 900;">FOR SALE</span></span>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="icons-card">
+                                            <i class="fas fa-home"></i>
+                                            <p class="h7 m-0"> 120m2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <p class="h7 m-0"> 1000m2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-bath"></i>
+                                            <p class="h7 m-0"> 2</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-bed"></i>
+                                            <p class="h7 m-0"> 3</p>
+                                        </div>
+                                        <div class="icons-card">
+                                            <i class="fas fa-swimming-pool"></i>
+                                        </div>
+                                        
+                                    </div>                        
+                                </div>
+                                <div class="card-foot">
+                                    <span class="from_price">From</span>
+                                    <span class="price">299.000€</span>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-12 col-md-12 d-flex justify-content-center">
+                        <i class="fas fa-circle h8-circle bullet_list_active m-2"></i>
+                        <i class="fas fa-circle h8-circle bullet_list m-2"></i>
+                        <i class="fas fa-circle h8-circle bullet_list m-2"></i>
+                        <i class="fas fa-circle h8-circle bullet_list m-2"></i>
+                    </div>
+                </div>
+                <div class="row d-none d-md-flex">
+                    <div class="col-md-12 text-center">
+                        <a href="file:///home/cristian/Documentos/PruebaMedialnex/html/properties.html" class="py-1 px-1 btn_outline_dark_info w-100 mt-3"><span class="txt_btn_outlined mx-5 white_text">VIEW ALL PROPERTIES</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container_footer mx-auto" > 
+            <div class="background_footer mx-auto">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="mt-5 col-md-12 d-flex justify-content-center">
+                            <img src="../Assests/Logo_white.svg" class="footer_title">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="mt-5 col-12 col-md-6 d-flex flex-wrap justify-content-around">
+                            <span class="footer_nav btn_active_white"><a href="">HOME</a></span>
+                            <span class="footer_nav"><a href="">PROPERTIES</a></span>
+                            <span class="footer_nav"><a href="">SELL</a></span>
+                            <span class="footer_nav"><a href="">BUYING</a></span>
+                            <span class="footer_nav"><a href="">HOME ENHANCEMENTS</a></span>
+                            <span class="footer_nav"><a href="">URBAN MANAGEMENT</a></span>
+                            <span class="footer_nav"><a href="">CONTACT</a></span>
+                            <span class="footer_nav"><a href="">FAVOURITES</a></span>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row pb-5 pb-md-1">
+                        <div class="col-md-2 col-2"></div>
+                        <div class="col-md-1 col-1 border-bottom"></div>
+                        <div id="icons-in-footer" class="mt-5 col-6 col-md-6 d-flex flex-wrap justify-content-md-between justify-content-center border-bottom">
+                            <span class="text-center my-auto icon-footer">
+                                <img src="../Assests/phone_white_footer.svg" class="mb-4"><p class="text-icon-footer"> <span class="font-weight-bolder">ENG</span> +44 880 880 880 <span class="font-weight-bolder">ESP</span>  +34 660 660 660</p>
+                            </span>
+                            <span class="text-center my-auto icon-footer">
+                                <img src="../Assests/location_footer.svg" class="mb-4"><p class="text-icon-footer font-weight-bolder"> LOREM IPSUM · 65 ELCHE · ALICANTE</p>
+                            </span>
+                            <span class="text-center my-auto icon-footer">
+                                <img src="../Assests/mail_white_footer.svg" class="mb-4"><p class="font-weight-bolder h6"> info@miinmobiliaria </p>
+                            </span>
+                        </div>
+                        <div class="col-md-1 col-1 border-bottom"></div>
+                        <div class="col-md-2 col-2"></div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-2"></div>
+                        <div class="col-8 col-md-6 mb-5 mb-md-0">
+                            <p class="white_text font-weight-bolder footer_end_text">
+                                © 2020 <i class="fas fa-circle h8-circle"></i> 
+                                MiInmobiliaria <i class="fas fa-circle h8-circle"></i>
+                                Legal note <i class="fas fa-circle h8-circle"></i>
+                                Privacy <i class="fas fa-circle h8-circle"></i>
+                                Cookies <i class="fas fa-circle h8-circle"></i>
+                                Web map
+                                <span class="ml-3">Design: Mediaelx</span>
+                            </p>
+                        </div>
+                        <div class="mt-4 mt-md-0 col-12 col-md-2 d-flex justify-content-md-end justify-content-center footer_social_media">
+                            <img src="../Assests/twitter.svg" class="mx-3">
+                            <img src="../Assests/facebook.svg" class="mx-3">
+                            <img src="../Assests/instagram.svg" class="mx-3">
+                        </div>
+                        <div class="col-md-2 col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
     <script src="../js/carousel_control.js"></script>
 </html>

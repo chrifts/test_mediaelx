@@ -1,0 +1,70 @@
+.title_main_home {
+    font-weight: 800;
+    font-size: 56px;
+}
+
+.subtitle_main_home {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.background_header {
+    background-color: white;
+}
+
+.background_header_home {
+    background-image: url("../Assests/Background_slider.jpg");
+}
+
+.btn_feather_home {
+    width: 20%;
+    height: 55px;
+    border-right: 1px solid white;
+}
+#feather_icons {
+    position: relative;
+    top: 3px;
+}
+#feather_icons button:last-child {
+    border: none;
+}
+
+@media (min-width: 767px) {
+    .main_background {
+        padding-top: 390px; 
+        padding-bottom: 280px;
+    } 
+}
+@media (max-width: 767px) { 
+    .btn_filter_home {
+        width: 100%;
+    }
+    .background_header_home {
+        background-size: 277%;
+    }
+}
+
+@media (max-width: 426px) {
+    .background_home_prop_of_the_week {
+        background-image: url('../Assests/background_property_month_phone.jpg');
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+@media (min-width: 427px) { 
+    .background_home_prop_of_the_week {
+        background-image: url('../Assests/background_property_month.jpg');
+        background-position: bottom left;
+    }
+}
+
+
+.pb-prop-week {
+    padding-bottom: 300px;
+}
+
+
+
+
+

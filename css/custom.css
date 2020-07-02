@@ -20,7 +20,7 @@ body {
 .custom_btn_search {
     font-size: 13px;
     font-weight: 800;
-    height: 30px !important; 
+    height: 35px !important; 
     width: 120px !important; 
     cursor: pointer;
 }
@@ -37,7 +37,7 @@ body {
     background-color: black;
     width: 75px;
     height: 40px;
-    line-height: 25px;
+    line-height: 32px;
 }
 
 @media (max-width: 990px) { 
@@ -54,8 +54,8 @@ body {
     background-color: transparent;
     width: 34px;
     height: 34px;
-    position: relative;
-    left: 10px;
+    position: absolute;
+    right: 0;
 }
 
 .small_btn {
@@ -93,6 +93,16 @@ body {
     border-radius: 2px;
 }
 
+.custom_select_text {
+    padding-top: 10px !important;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+}
+
 .component_select {
     width: 100%;
 }
@@ -126,14 +136,39 @@ body {
     margin: 0;
 }
 
+.card_custom {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        transform: scale(0.5);
+}
 
+.border_body_hor_card{
+    border: 2px solid rgba(0,0,0,.125);
+}
+
+.img_hor_card {
+    min-width: 130px;
+    max-width: 150px; 
+    transform: scale(1.03);
+}
+
+.gray_text {
+    color: gray;
+}
 
 @media (max-width: 520px) {
     .custom_select_sort {
         min-width: 100%;
     }
     .component_select {
-        width: 50%;
+        width: 100%;
     }
 }
 
