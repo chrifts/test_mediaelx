@@ -33,14 +33,50 @@
     .main_background {
         padding-top: 390px; 
         padding-bottom: 280px;
-    } 
+    }
+    .scale_1-1 {
+        transform: scale(1.03);
+    }
+    /* .w-image-home {
+        width: 48.6% !important;
+    } */
+    .block_desktop_lines {
+        position: relative;
+        bottom: 75px !important;
+    }
 }
+.division_images_containers {
+    bottom: 100px; 
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .block_desktop_lines {
+        position: relative;
+        bottom: 300px !important;
+    }
+}
+
+@media (min-width: 1150px) {
+    .block_desktop_lines {
+        position: relative;
+        bottom: 325px !important;
+    }    
+}
+
 @media (max-width: 767px) { 
     .btn_filter_home {
         width: 100%;
     }
     .background_header_home {
         background-size: 277%;
+    }
+}
+
+@media (max-width: 991px) {
+    .division_images_containers {
+        bottom: -100px; 
+        position: relative;
     }
 }
 
@@ -51,20 +87,85 @@
         background-repeat: no-repeat;
         background-size: 100%;
     }
+    .scale_1-1 {
+        transform: scale(1.1);
+        position: relative;
+        bottom: 50px;
+    }
+    
 }
+
 @media (min-width: 427px) { 
     .background_home_prop_of_the_week {
         background-image: url('../Assests/background_property_month.jpg');
+        background-repeat: no-repeat;
         background-position: bottom left;
+    }
+    .lines_phone {
+        position: absolute;
+        left: 82px;
+        bottom: -39px;
+        z-index: 0;
+    }
+    .lines_phone_up {
+        position: absolute;
+        left: 82px;
+        bottom: -39px;
+        z-index: 0;
     }
 }
 
 
 .pb-prop-week {
-    padding-bottom: 300px;
+    padding-bottom: 180px;
+}
+
+.inner_img_text {
+    position: absolute;
+    left: 50px;
+    top: 30px;
 }
 
 
+.featured_props {
+    background-color: #f7f7f7;
+    padding-bottom: 75px;
+}
 
+.lines_phone {
+    position: absolute;
+    left: 82px;
+    bottom: 25px;
+    z-index: 0;
+}
+.lines_phone_up {
+    position: absolute;
+    left: 82px;
+    bottom: -39px;
+    z-index: -1;
+}
+
+
+.lines_desktop{
+    position: absolute;
+    width: 80%;
+    left: 0;
+    bottom: -65px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.lines_desktop_right {
+    position: absolute;
+    width: 80%;
+    right: 0;
+    bottom: -65px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.w-image-home {
+    width: 100%;
+}
 
 
