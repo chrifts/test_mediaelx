@@ -91,15 +91,30 @@ var data = [
     }
   ]
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+$.fn.toggleAttr = function(attr, attr1, attr2) {
+  return this.each(function() {
+    var self = $(this);
+    if (self.attr(attr) == attr1)
+      self.attr(attr, attr2);
+    else
+      self.attr(attr, attr1);
+  });
+};
+
+$.fn.extend({
+  toggleText: function(a, b){
+      return this.text(this.text() == b ? a : b);
+  }
+});
+
+function openNav(btn) {
+  $('#mySidenav').toggleClass('menu_open')
+  $(btn).toggleClass('active')
+  $(btn).find("#img_menu").toggleAttr('src', '../Assests/close.svg', '../Assests/menu.svg');
+  $(btn).find("#btn_menu_title").toggleText("MENU", "CLOSE");
 }
   
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  $('#mySidenav').toggleClass('menu_open')
 }
 
-// window.addEventListener("scroll", function (event) {
-//   var scroll = this.scrollY;
-//   console.log(scroll)
-// });

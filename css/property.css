@@ -156,7 +156,12 @@ html {
   }
   
   .checkbox-button__control {
-    transform: scale(0.75);
+    /* transform: scale(0.75); */
+  }
+
+  .checkbox-button__label .home {
+    position: relative;
+    bottom: -1px;
   }
 
   .h6-5 {

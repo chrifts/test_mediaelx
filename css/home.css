@@ -29,13 +29,24 @@
     border: none;
 }
 
+#filters {
+    height: 185px;
+}
+
+
+.specific_scale_img {
+    transform: scale(1);
+}
 @media (min-width: 767px) {
     .main_background {
         padding-top: 390px; 
-        padding-bottom: 280px;
+        padding-bottom: 218px;
+    }
+    .specific_scale_img {
+        transform: scale(1.044);
     }
     .scale_1-1 {
-        transform: scale(1.03);
+        transform: scale(1.044);
     }
     /* .w-image-home {
         width: 48.6% !important;
@@ -135,13 +146,13 @@
 .lines_phone {
     position: absolute;
     left: 82px;
-    bottom: 25px;
-    z-index: 0;
+    bottom: -39px;
+    z-index: -1;
 }
 .lines_phone_up {
     position: absolute;
     left: 82px;
-    bottom: -39px;
+    bottom: -80px;
     z-index: -1;
 }
 

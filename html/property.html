@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../css/sidebarnav.css">
         <link rel="stylesheet" href="../css/cards.css">
         <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/home.css">
         <link rel="stylesheet" href="../css/property.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
         <!-- UIkit JS -->
@@ -22,23 +23,36 @@
         <script src="../js/properties.js"></script>
     </head>
     <body class="bk_zi">
+        <div id="mySidenav" class="sidenav text-center text-md-right">
+            <a href="javascript:void(0)" class="closebtn d-md-none my-auto" onclick="closeNav()"> <img src="../Assests/close.svg"> <span class="h6">CLOSE</span></a>
+            <span ><a href="" class="mt-3">HOME</a></span>
+            <span><a href="">PROPERTIES</a></span>
+            <span><a href="">ABOUT US</a></span>
+            <span><a href="">CONTACT</a></span>
+            <span><a href="">SELLING</a></span>
+            <span><a href="">BUYING</a></span>
+            <span><a href="">HOME ENHANCEMENTS</a></span>
+            <span><a href="">URBAN MANAGEMENT</a></span>
+            <span><a href="">CONTACT</a></span>
+            <span><a href=""><img src="../Assests/fav_solid.svg" alt="">(2)</span></a>
+        </div>
         <header class="container-fluid bk_zi mxw-main-container">
             <div class="row">
                 <div class="col-md-12 mb-md-0 px-0 px-md-3 mx-0">
                     <div class="row mx-2 d-none d-md-flex">
-                        <div class="col-md-12 d-flex justify-content-center justify-content-md-end my-auto" id="main-top-bar" style="padding-right: 0;">
+                        <div class="col-md-12 d-flex justify-content-center justify-content-md-end my-auto pr-0" id="main-top-bar">
                             <span class="text-center my-auto">
-                                <img src="../Assests/clime.svg" class="icon-weather mr-2"><span class="top_span_text white_text">10° ALICANTE</span>
+                                <img src="../Assests/clime.svg" class="icon-weather mr-2"><span class="top_span_text ">10° ALICANTE</span>
                             </span>
-                            <span class="text-center my-auto white_text">
-                                <img src="../Assests/mov_white.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12 white_text" >ENG</label><span class="top_span_text_grey white_text"> +44 880 880 880</span>
+                            <span class="text-center my-auto ">
+                                <img src="../Assests/mov.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12 " >ENG</label><span class="top_span_text_grey "> +44 880 880 880</span>
                             </span>
-                            <span class="text-center my-auto white_text">
-                                <img src="../Assests/mov_white.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12 white_text">ESP</label><span class="top_span_text_grey white_text"> +34 660 660 660</span>
+                            <span class="text-center my-auto ">
+                                <img src="../Assests/mov.svg" class="icon_mobile" alt=""><label class="font-weight-bolder m-0 font_12 ">ESP</label><span class="top_span_text_grey "> +34 660 660 660</span>
                             </span>
                            
-                            <span class="text-center my-auto white_text">
-                                <img src="../Assests/mail_white.svg" class="icon_mobile fix_mail_svg_header"> <span class="top_span_text white_text"> info@miinmobiliaria.com</span>
+                            <span class="text-center my-auto ">
+                                <img src="../Assests/mail.svg" class="icon_mobile fix_mail_svg_header"> <span class="top_span_text "> info@miinmobiliaria.com</span>
                             </span>
                             <span class="text-center my-auto">
                                 <a href="">
@@ -75,9 +89,11 @@
                                 <span class="nav_button_header"><a href="">ABOUT US</a></span>
                                 <span class="nav_button_header"><a href="">CONTACT</a></span>
                                 <span class="ml-4 fav-icon"><img src="../Assests/fav.svg" alt=""></span><span class="mr-2 fav_q">(2)</span>
-                                <a href="#" class="hamb-menu-desktop">
-                                    <img src="../Assests/menu.svg">
-                                    <span>MENU</span>
+                                <a href="#" onclick="openNav(this)" class="hamb-menu-desktop">
+                                    <span class="my-auto text-align-start">
+                                        <img id="img_menu" src="../Assests/menu.svg">
+                                    </span>
+                                    <span id="btn_menu_title">MENU</span>
                                 </a>
                             </div>
                         </div>
@@ -102,20 +118,14 @@
                             </div>
                             <div class="text-start d-inline float-right mr-2 mt-1">
                                 <span onclick="openNav()" class="my-auto text-align-start"><img src="../Assests/menu.svg" class="p-1 border_hamb_mobile"></span>                            
-                                <div id="mySidenav" class="sidenav">
-                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                    <span><a href="">HOME</a></span>
-                                    <span><a href="">PROPERTIES</a></span>
-                                    <span><a href="">ABOUT US</a></span>
-                                    <span><a href="">CONTACT</a></span>
-                                    <span><a href=""><img src="../Assests/fav.svg" alt="">(2)</span></a>
-                                </div>
+
                             </div>
                             
                         </div>
                     </div>
                 </div>
             </div>
+            
         </header>
         <section id="prop_header" class="container">
             <article class="row mt-5 d-none d-md-flex">
@@ -456,7 +466,7 @@
                             <label for="" class="label_for_select px-1">QUESTION</label>
                             <textarea type="text" class="custom_select_text p-1" name="question" style="min-height: 145px;"> Write your question </textarea>
                         </div>
-                        <div class="example">
+                        <div class="">
                             <label class="checkbox-button">
                               <input type="checkbox" class="checkbox-button__input" id="choice1-1" name="agree_privacy">
                               <span class="checkbox-button__control"></span>
