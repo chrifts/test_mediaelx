@@ -1,9 +1,16 @@
-body {
-    font-family: 'Roboto', sans-serif;
+body h1, h2, h3, h4, h5, h6{
+    /* DESTACADO Y TITULARES */
+    font-family: 'Poppins', sans-serif;
 }
-#grid_items {
-    font-family: 'Muli', sans-serif;
-}
+
+
+ body {
+     /* PARRAFOS */
+    font-family: 'Open Sans', sans-serif;
+} 
+/* #grid_items {
+    font-family: 'Open Sans', sans-serif;
+} */
 
 .bk_zi {
     z-index: 2; 
@@ -18,10 +25,10 @@ body {
 }
 
 .custom_btn_search {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
-    height: 35px !important; 
-    width: 120px !important; 
+    height: 40px !important;
+    width: 165px !important;
     cursor: pointer;
 }
 
@@ -161,6 +168,9 @@ body {
 
 .gray_text {
     color: gray;
+}
+.black_text {
+    color: black;
 }
 
 @media (max-width: 520px) {

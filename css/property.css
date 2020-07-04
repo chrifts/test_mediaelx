@@ -1,5 +1,4 @@
 #prop_header {
-    font-family: 'Muli', sans-serif;
 }
 
 .icons-card-prop {
@@ -100,9 +99,6 @@
     right: 21px;
 }
 
-html {
-    font-family: Arial;
-  }
   
   .checkbox-button {
     cursor: pointer;

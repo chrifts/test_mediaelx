@@ -14,6 +14,7 @@
 
 .background_header_home {
     background-image: url("../Assests/Background_slider.jpg");
+    background-repeat: no-repeat;
 }
 
 .btn_feather_home {
@@ -33,20 +34,31 @@
     height: 185px;
 }
 
+#filters_home_bk {
+    height: 485px;
+}
+
+#filters_home_border {
+    border: 1px solid gray;
+}
+
 
 .specific_scale_img {
     transform: scale(1);
 }
 @media (min-width: 767px) {
+    #filters_home_border {
+        border: none;
+    }
     .main_background {
-        padding-top: 390px; 
-        padding-bottom: 218px;
+        padding-top: 310px; 
+        padding-bottom: 0;
     }
     .specific_scale_img {
         transform: scale(1.044);
     }
     .scale_1-1 {
-        transform: scale(1.044);
+        transform: scale(1.0336);
     }
     /* .w-image-home {
         width: 48.6% !important;
@@ -80,7 +92,7 @@
         width: 100%;
     }
     .background_header_home {
-        background-size: 277%;
+        background-size: cover;
     }
 }
 

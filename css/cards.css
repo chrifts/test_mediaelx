@@ -63,7 +63,7 @@
     top: 0;
     left: 0;
     opacity: 1;
-    height: 28%;
+    height: 50px;
     width: 50%;
     z-index: 0 !important;
 }
@@ -80,22 +80,13 @@
     height: 27px;
     width: 27px;
     position: relative;
+    margin-bottom: auto;
     padding: 3px;
-    top: 3px;
-    left: 51px;
     background-color: white;
 }
 
 @media (max-width: 334px) {
-    .star_svg {
-        height: 27px;
-        width: 27px;
-        position: relative;
-        padding: 3px;
-        top: 0px;
-        left: 49px;
-        background-color: white;
-    }
+
     .carousel_ref {
         bottom: 135px;
         left: -4px;
@@ -105,7 +96,7 @@
 }
 
 .ref_text {
-    width: 85%;
+    width: 100%;
     text-align: center;
     background-color: black;
     color: white;

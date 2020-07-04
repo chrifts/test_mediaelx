@@ -1,0 +1,115 @@
+.background_header_selling {
+    background-image: url("../Assests/sell.jpg");
+    background-position: bottom;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background_selling_reasons {
+    background-image: url("../Assests/background_sell_characteristics.jpg");
+    height: 768px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subtitle_header {
+
+    font-size: 20px;
+}
+
+.pt-c-selling {
+    padding-top: 225px;
+    padding-bottom: 130px;
+}
+
+.h0 {
+    font-size: 57px;
+}
+
+.card_reason h1{
+    font-size: 3rem;
+
+}
+
+.card_reason {
+
+    background-color: black;
+    color: white;
+    height: 275px;
+}
+._transp {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+.lines_selling {
+    transform: translate(-235px, 27px) scale(1.6);
+    opacity: 0.5;
+    max-height: 150px;
+}
+
+.lines_selling_right {
+    transform: translate(-300px, 0) scale(3);
+    opacity: 0.5;
+    position: relative;
+    bottom: 145px;
+}
+
+.w-md-25 {
+    width: 25%;
+}
+.ul_li li:first-child {
+    margin-top: 0px;
+}
+.ul_li li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 12px;
+}
+.ul_li li:last-child {
+    margin-bottom: 0px;
+}
+
+.background_last_selling {
+    background-image: url("../Assests/background_sell_2.jpg");
+    height: 820px;
+}
+
+
+@media (max-width: 767px) {
+    .background_header_selling {
+        background-image: url("../Assests/sell_mob.jpg");
+        height: auto;
+        padding-bottom: 52%;
+        background-size: 100%;
+    }
+    .background_selling_reasons {
+        background-image: url("../Assests/background_sell_2_mob.jpg");
+        height: 1686px;
+    }
+
+    .background_last_selling {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 135px;
+    }
+
+    .pt-c-selling {
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+        top: 85px;
+    }
+    .h0 {
+        font-size: 24px;
+    }
+    .subtitle_header {
+        font-size: 14px;
+    }
+    .w-mob-100 {
+        width: 100%;
+    }
+}

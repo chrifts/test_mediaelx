@@ -13,13 +13,13 @@
 
 .top_span_text {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     
 }
 
 .top_span_text_grey {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     color: grey;
     
 }
@@ -31,21 +31,21 @@
     top: 2px;
 }
 
-.font_12 {
-    font-size: 12px;
+.font_h {
+    font-size: 15px;
 }
 
 .width_flags {
-    width: 25px;
-    height: 15px;
+    width: 30px;
+    height: 20px;
     margin: 0px 2px 0px 2px;
     border-radius: 2px;
 }
 
 @media (max-width: 951px) {
     .width_flags {
-        width: 25px;
-        height: 15px;
+        width: 30px;
+        height: 20px;
         margin: 0px;
     }
     .main_icon img {
@@ -56,8 +56,16 @@
         width: 10%;
         margin-right: 0;
     }
-   
-    #main-top-bar span span {
+}
+
+@media (max-width: 1218px) {
+    #main-top-bar span img {
+        display: none;
+    }
+}
+
+@media (max-width: 981px) {
+    #main-top-bar span {
         display: none;
     }
 }
@@ -70,13 +78,19 @@
 }
 
 .nav_button_header {
-    margin-left: 15px;
+    margin-left: 26px;
+}
+
+#btn_menu_title {
+    font-weight: 800;
+    font-size: 14px;
+    margin-left: 10px;
 }
 
 .nav_button_header a {
-    font-size: 12px ;
+    font-size: 14px ;
     color: #7e94aa;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .fav-icon {
@@ -89,10 +103,10 @@
     height: 20px;
 }
 .fav_q {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     color: gray;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .btn_active a {
@@ -101,6 +115,7 @@
 
 .hamb-menu-desktop {
     color: #7e94aa;
+    margin-right: 15px;
 }
 
 .hamb-menu-desktop:hover {
@@ -109,13 +124,15 @@
 }
 
 .hamb-menu-desktop img {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+    padding-bottom: 5px;
 }
 
 .hamb-menu-desktop span {
     font-size: 12px;
     font-weight: 500;
+    margin-left: 10px;
 }
 
 .icon_mobile {
@@ -130,7 +147,7 @@
 
 .fix_mail_svg_header {
     position: relative;
-    top: 1px;
+    top: -1px;
     width: 25px;
 }
 .fix_height {
@@ -140,6 +157,7 @@
 
 .border_hamb_mobile {
     border: 1px solid #7e94aa;
+    height: 35px;
 }
 
 .search_btn_mobile {

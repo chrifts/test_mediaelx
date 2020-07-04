@@ -8,7 +8,6 @@
     padding: 0 !important;
 }
 .background_footer {
-    font-family: 'Muli', sans-serif;
     background: url("../Assests/footer.jpg");
     background-position: center center;
     background-size: cover;
@@ -28,7 +27,6 @@
 
 @media (max-width: 768px) { 
     .background_footer {
-        font-family: 'Muli', sans-serif;
         background: url("../Assests/mobile_footer.jpg");
         background-position: center center;
         background-size: cover;
